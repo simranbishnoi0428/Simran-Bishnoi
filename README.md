@@ -1,16 +1,3 @@
-<!-- ==========================
-PART 1 - BIRTHDAY WEBSITE
-Password: MINE
-Secret Note Password: 28/10/10
-Games Included:
-1. Tic Tac Toe
-2. Rock Paper Scissors
-3. Number Guess
-4. Birthday Trivia
-5. Science Quiz
-========================== -->
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">

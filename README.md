@@ -188,20 +188,6 @@ and every day be brighter than today.
 <p>https://youtube.com/playlist?list=PLy32nUMhA3riuWTxvIFuI29GSuysi2snd&si=YYH1n-ALANV6Ifde</p>
 
 </div>
-
-<div class="card">
-
-<h2>🔬 Science Dashboard</h2>
-
-<p>⚛ Theory of Relativity</p>
-<p>🌍 Gravity</p>
-<p>🧬 DNA</p>
-<p>⚡ Electricity</p>
-<p>🌌 Big Bang Theory</p>
-<p>🔭 Quantum Mechanics</p>
-
-</div>
-
 <div class="card">
 
 <h2>🎮 Games Menu</h2>

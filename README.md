@@ -6,7 +6,7 @@
 <style>
   body {
     font-family: 'Comic Sans MS', cursive;
-    background: linear-gradient(to right, #ffe6f0, #e6f7ff);
+    background: linear-gradient (right, #ffe6f0, #e6f7ff);
     text-align: center;
     margin: 0;
     overflow-x: hidden;
@@ -17,38 +17,38 @@
   h1, h2 { color: #ff6699; }
   .balloon {
     position: absolute;
-    bottom: -100px;
-    width: 50px;
-    height: 70px;
-    border-radius: 50%;
+    bottom: -100 px;
+    width: 50 px;
+    height: 70 px;
+    border-radius: 50 %;
     animation: float 10s infinite;
   }
-  @keyframes float {
-    0% { bottom: -100px; }
+  @ keyframes float {
+    0% { bottom: -100 px; }
     100% { bottom: 100vh; }
   }
   .confetti {
     position: fixed;
-    width: 10px;
-    height: 10px;
-    animation: fall 5s infinite;
+    width: 10 px;
+    height: 10 px;
+    animation: fall 5 s infinite;
   }
-  @keyframes fall {
-    0% { top: -10px; }
+  @ keyframes fall {
+    0% { top: -10 px; }
     100% { top: 100vh; }
   }
   .game {
-    border: 2px solid #ccc;
-    margin: 10px;
-    padding: 10px;
+    border: 2 px solid #ccc;
+    margin: 10 px;
+    padding: 10 px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 10 px;
   }
   .note {
     background: #fff0f5;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
+    padding: 20 px;
+    border-radius: 10 px;
+    margin: 20 px;
   }
   #games { display: flex; flex-wrap: wrap; justify-content: center; }
   .game canvas { background: #f9f9f9; }
@@ -135,27 +135,27 @@
 <script>
   // Password screen
   document.getElementById("passwordScreen").style.display = "block";
-  function checkPassword() {
-    let input = document.getElementById("passInput").value;
-    if(input === "MINE") {
+  functioncheckPassword() {
+    letinput = document.getElementById("passInput").value;
+       (input === "MINE") {
       document.getElementById("passwordScreen").style.display = "none";
       document.getElementById("dashboard").style.display = "block";
-    } else {
+    }  {
       alert("Wrong password!");
     }
   }
-  function unlockNote() {
-    let pwd = prompt("Enter secret note password:");
-    if(pwd === "28/10/10") {
+  functionunlockNote() {
+    letpwd = prompt("Enter secret note password:");
+       (pwd === "28/10/10") {
       document.getElementById("secretNote").style.display = "block";
-    } else {
+    }  {
       alert("Incorrect password!");
     }
   }
 
   // Balloons
-  for(let i=0; i<10; i++) {
-    let balloon = document.createElement("div");
+  (leti=0; i<10; i++) {
+    letballoon = document.createElement("div");
     balloon.className = "balloon";
     balloon.style.left = Math.random()*100 + "vw";
     balloon.style.background = "hsl(" + Math.random()*360 + ",70%,80%)";
@@ -163,8 +163,8 @@
   }
 
   // Confetti
-  for(let i=0; i<50; i++) {
-    let confetti = document.createElement("div");
+  (leti=0; i<50; i++) {
+    letconfetti = document.createElement("div");
     confetti.className = "confetti";
     confetti.style.left = Math.random()*100 + "vw";
     confetti.style.background = "hsl(" + Math.random()*360 + ",70%,50%)";
@@ -172,25 +172,25 @@
   }
 
   // Example Game Functions
-  function playRPS(){ alert("Rock Paper Scissors game coming soon!"); }
-  function guessNumber(){ alert("Guess a number between 1-10!"); }
-  function birthdayTrivia(){ alert("Trivia: Daksh loves surprises!"); }
-  function scienceQuiz(){ alert("Science Quiz: Earth is the 3rd planet!"); }
-  function memoryMatch(){ alert
+  functionplayRPS(){ alert("Rock Paper Scissors game coming soon!"); }
+  functionguessNumber(){ alert("Guess a number between 1-10!"); }
+  functionbirthdayTrivia(){ alert("Trivia: Daksh loves surprises!"); }
+  functionscienceQuiz(){ alert("Science Quiz: Earth is the 3rd planet!"); }
+  functionmemoryMatch(){ alert
   <!-- Ending Fireworks & Birthday Wish -->
 <canvas id="finalFireworks"></canvas>
 <h1 id="birthdayWish">🎆🎂 Happy Birthday Daksh 🎂🎆</h1>
 
 <script>
   // Fireworks animation
-  const canvas = document.getElementById("finalFireworks");
-  const ctx = canvas.getContext("2d");
+  constcanvas = document.getElementById("finalFireworks");
+  constctx = canvas.getContext("2d");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  function random(min, max) { return Math.random() * (max - min) + min; }
+  functionrandom(min, max) { returnMath.random() * (max - min) + min; }
 
-  class Firework {
+  classFirework {
     constructor() {
       this.x = random(0, canvas.width);
       this.y = canvas.height;
